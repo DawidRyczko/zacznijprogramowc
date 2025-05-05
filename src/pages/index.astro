@@ -1,0 +1,62 @@
+---
+import { SHOW_SOCIAL_LINKS, POST_ON_HOME_PAGE } from "../consts";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PostCard from "../components/post/PostCard.astro";
+import { getCollection } from "astro:content";
+import SocialLinks from "../components/SocialLinks.astro";
+import { getPublishedPosts, sortPostsByDate } from "../utils/filterts";
+import FeaturedCategory from "../components/FeaturedCategory.astro";
+
+const allPosts = await getCollection("blog");
+const published = getPublishedPosts(allPosts);
+const sortedByDate = sortPostsByDate(published);
+const posts = sortedByDate.slice(0, POST_ON_HOME_PAGE);
+---
+
+<BaseLayout
+  title="Home page"
+  description="Check out my blog for a deep dive into Lorem Ipsum. You'll find comprehensive information about this intriguing topic, exclusively available here."
+>
+  <section>
+    <div class="py-9">
+      <h1 class="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white">Welcome on my blog</h1>
+      <p class="text-lg md:text-xl font-normal text-gray-500 dark:text-gray-400">
+        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+      </p>
+      {
+        SHOW_SOCIAL_LINKS && (
+          <div class="mt-4">
+            <SocialLinks />
+          </div>
+        )
+      }
+    </div>
+  </section>
+
+  <section class="mb-9">
+    <h2 class="text-3xl font-bold mb-9">Featured Categories</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-16 mt-4">
+      <FeaturedCategory
+        title="Astro"
+        content="Exploring the features and possibilities of the new Astro theme with a demo post."
+        href="astro"
+      />
+      <FeaturedCategory
+        title="Markdown"
+        content="Learn the essential Markdown syntax for formatting text, creating lists, adding links, and more. A simple way to structure content for the web."
+        href="markdown"
+      />
+      <FeaturedCategory title="Theme" content="Explore a curated collection of themes." href="theme" />
+      <FeaturedCategory
+        title="Tricks"
+        content="Discover clever techniques and tips for optimizing your Astro project."
+        href="tricks"
+      />
+    </div>
+  </section>
+
+  <h2 class="text-3xl font-bold mb-9">New Posts</h2>
+  <section class="">
+    {posts.map((post: any) => <PostCard post={post} />)}
+  </section>
+</BaseLayout>

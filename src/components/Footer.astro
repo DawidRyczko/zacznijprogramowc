@@ -1,0 +1,12 @@
+---
+import { SITE_TITLE, SITE_URL } from "../consts";
+const today = new Date();
+---
+
+<footer class="bg-white dark:bg-gray-900 shadow-sm">
+  <div class="w-full mx-auto max-w-screen-xl p-4">
+    <div class="text-sm text-center dark:text-white text-gray-900">
+      {today.getFullYear()} - <a href={SITE_URL} class="hover:underline">{SITE_TITLE}</a>
+    </div>
+  </div>
+</footer>
