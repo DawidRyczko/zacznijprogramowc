@@ -3,8 +3,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 import { getPublishedPosts, sortPostsByDate } from "../utils/filterts";
 import PostDate from "../components/post/PostDate.astro";
+import { getBaseUrl } from "../utils/tools";
 
-const baseUrl = import.meta.env.BASE_URL;
+const baseUrl = getBaseUrl();
 
 const posts = await getCollection("blog");
 const publishedPosts = getPublishedPosts(posts);
