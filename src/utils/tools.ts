@@ -7,3 +7,8 @@ export function formatDate(date: Date): string {
     day: "numeric",
   });
 }
+
+export function getBaseUrl() {
+  const envBaseUrl = import.meta.env.BASE_URL;
+  return envBaseUrl === "/" ? "" : envBaseUrl;
+}
