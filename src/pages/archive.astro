@@ -21,10 +21,10 @@ const postsByYear = sortedPosts.reduce((acc: { [key: string]: any[] }, post) => 
 ---
 
 <BaseLayout
-  title="Explore Archive"
-  description="Archive of posts. Browse a comprehensive collection of all blog entries."
+  title="Archiwum wpisów"
+  description="Archiwum postów. Przeglądaj obszerną kolekcję wszystkich wpisów na blogu."
 >
-  <h1 class="text-4xl font-semibold mb-9">Explore the Archive</h1>
+  <h1 class="text-3xl md:text-4xl font-semibold mb-9">Archiwum wpisów</h1>
   {
     Object.entries(postsByYear)
       .sort((a, b) => b[0].localeCompare(a[0]))

@@ -22,8 +22,8 @@ export async function getStaticPaths({ paginate }) {
 const { page } = Astro.props;
 ---
 
-<BaseLayout title="Explore all posts" description="- Browse every blog post I've written.">
-  <h1 class="text-4xl font-semibold mb-9">Explore all my posts</h1>
+<BaseLayout title="Wsystkie wpisy" description="Przeglądaj każdy wpis na blogu, który napisałem.">
+  <h1 class="text-4xl font-semibold mb-9">Wsystkie wpisy</h1>
   <section>
     {page.data.map((post: any) => <PostCard post={post} />)}
   </section>

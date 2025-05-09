@@ -4,9 +4,17 @@ const today = new Date();
 ---
 
 <footer class="bg-white dark:bg-gray-900 shadow-sm">
-  <div class="w-full mx-auto max-w-screen-xl p-4">
+  <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
     <div class="text-sm text-center dark:text-white text-gray-900">
-      {today.getFullYear()} - <a href={SITE_URL} class="hover:underline">{SITE_TITLE}</a>
+      {today.getFullYear()} - <a href={SITE_URL} class="hover:underline hover:text-primary-500">{SITE_TITLE}</a>
     </div>
+    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+      <li>
+        <a href="/polityka-prywatnosci" class="hover:underline me-4 md:me-6 hover:text-primary-500">Polityka prywatności</a>
+      </li>
+      <li>
+        <a href="/rodo" class="hover:underline hover:text-primary-500">Rodo</a>
+      </li>
+    </ul>
   </div>
 </footer>

@@ -8,9 +8,9 @@ const baseUrl = import.meta.env.BASE_URL;
   class="flex flex-col max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700"
 >
   <a href={`${baseUrl}/tags/${href}`}>
-    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{title}</h5>
+    <h2 class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{title}</h2>
   </a>
-  <p class="grow mb-3 font-normal text-gray-700 dark:text-gray-400">{content}</p>
+  <p class="text-md md:text-lg grow mb-3 font-normal text-gray-700 dark:text-gray-400">{content}</p>
   <div class="self-end">
     <a
       href={`${baseUrl}/tags/${href}`}
