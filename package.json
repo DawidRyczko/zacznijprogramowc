@@ -16,7 +16,6 @@
     "@jop-software/astro-cookieconsent": "^3.0.1",
     "@tailwindcss/vite": "^4.1.4",
     "astro": "^5.7.0",
-    "astro-google-analytics": "^1.0.3",
     "flowbite": "^3.1.2",
     "tailwindcss": "^4.1.4"
   },

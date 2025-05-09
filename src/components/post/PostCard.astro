@@ -3,6 +3,7 @@ import TagChip from "./TagChip.astro";
 import PostDate from "./PostDate.astro";
 import type { CollectionEntry } from "astro:content";
 import ReadTime from "./ReadTime.astro";
+import { getBaseUrl } from "../../utils/tools";
 
 interface Props {
   post: CollectionEntry<"blog">;
@@ -10,7 +11,7 @@ interface Props {
 
 const { post } = Astro.props;
 const { title, description, date, tags } = post.data;
-const baserUrl = import.meta.env.BASE_URL;
+const baserUrl = getBaseUrl();
 ---
 
 <div class="mb-4 py-4 px-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700">

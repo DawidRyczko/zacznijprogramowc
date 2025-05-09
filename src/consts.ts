@@ -1,6 +1,8 @@
 // Place any global data in this file.
 // You can import this data from anywhere in your site by using the `import` keyword.
-const baseUrl = import.meta.env.BASE_URL;
+import { getBaseUrl } from "./utils/tools.ts";
+
+const baseUrl = getBaseUrl();
 // Site config
 export const SITE_URL = "https://zacznijprogramowac.net/"; // your https url
 export const SITE_TITLE = "ZacznijProgramowac.net"; // your base page title

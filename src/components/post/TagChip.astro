@@ -1,10 +1,11 @@
 ---
+import { getBaseUrl } from "../../utils/tools";
 interface Props {
   tag: string;
   href: string;
 }
 const { tag } = Astro.props;
-const baseUrl = import.meta.env.BASE_URL;
+const baseUrl = getBaseUrl();
 ---
 
 <a
