@@ -11,8 +11,10 @@ declare global {
 export const config: CookieConsentConfig = {
   guiOptions: {
     consentModal: {
-      layout: "box inline",
-      position: "bottom left",
+      layout: "bar",
+      position: "bottom",
+      flipButtons: true,
+      equalWeightButtons: true,
     },
     preferencesModal: {
       layout: "box",
@@ -35,6 +37,7 @@ export const config: CookieConsentConfig = {
             const script = document.createElement("script");
             script.src = `https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_ID}`;
             script.async = true;
+            script.type="text/javascript"
 
             document.head.appendChild(script);
             window.dataLayer = window.dataLayer || [];
@@ -64,8 +67,8 @@ export const config: CookieConsentConfig = {
           description:
             'Strona używa plików cookies. Kliknięcie przycisku "Akceptuj" oznacza zgodę na wykorzystanie wszystkich plików cookie.\n',
           acceptAllBtn: "Akceptuj",
-          acceptNecessaryBtn: "Odrzucam",
-          showPreferencesBtn: "Zarządzaj opcjami",
+          // acceptNecessaryBtn: "Odrzucam",
+          showPreferencesBtn: "Opcje",
           footer: '<a href="/polityka-prywatnosci">Polityka prywatności</a>',
         },
         preferencesModal: {
