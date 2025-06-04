@@ -1,6 +1,7 @@
 ---
 title: "Co to jest SSR - Server-Side Rendering?"
-description: "Wyjaśnienie czym jest Server-Side Rendering w technologiach frontendowych."
+description: "SSR - technika renderowania stron po stronie serwera dla szybszego ładowania 
+i lepszego SEO. Dowiedz się, kiedy warto ją zastosować i jakie są jej wady."
 date: 2025-05-18
 tags: [ "javascript", "slowniczek-java-script" ]
 ---

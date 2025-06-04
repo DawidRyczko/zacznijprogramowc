@@ -1,8 +1,9 @@
 ---
 title: "Co to jest CSR - Client-Side Rendering?"
-description: "Czym jest i jak działa CSR - Client-Side Rendering"
+description: "CSR - renderowanie strony w przeglądarce. Poznaj zalety i wady tego podejścia, 
+od interaktywności po SEO. Dowiedz się, kiedy warto wybrać CSR dla swojej aplikacji."
 date: 2025-05-26
-tags: ["javascript", "slowniczek-java-script"]
+tags: [ "javascript", "slowniczek-java-script" ]
 ---
 
 ## Szybka odpowiedź

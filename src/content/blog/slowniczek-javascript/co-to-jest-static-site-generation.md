@@ -1,13 +1,14 @@
 ---
-title: "Co to jest SSG - Static Site Generation?"
-description: "Czym Static Site Generation i gdzie najlepiej go używać? Szybkie omówienie."
+title: "Co to jest SSG - Static-Site Generation?"
+description: "SSG - poznaj technikę generowania statycznych stron HTML. 
+Szybkie ładowanie, idealne SEO i proste hostowanie! Dowiedz się, kiedy warto ją stosować."
 date: 2025-05-30
-tags: ["javascript", "slowniczek-java-script"]
+tags: [ "javascript", "slowniczek-java-script" ]
 ---
 
 ## Szybka odpowiedź
 
-SSG - Static Site Generation to generowanie stron HTML podczas procesu budowy naszego kodu. Wygenerowane w ten sposób
+SSG - Static-Site Generation to generowanie stron HTML podczas procesu budowy naszego kodu. Wygenerowane w ten sposób
 statyczne pliki HTML tworzą w całości naszą stronę, którą przesyłamy na serwer. Użytkownik, wykonując zapytanie o naszą
 stronę, od razu dostaje gotowy HTML do wyświetlenia bez żadnego dodatkowego renderowania po stronie serwera.
 
