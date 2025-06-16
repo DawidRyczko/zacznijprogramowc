@@ -1,6 +1,6 @@
 ---
 title: "Co to jest Deno czyli alternatywa dla Node.js?"
-description: "Deno to nowoczesne środowisko uruchomieniowe dla JavaScript i TypeScript, stworzone przez twórcę Node.js. Odkryj jego zalety, takie jak bezpieczeństwo, natywne wsparcie dla TypeScript i wbudowane narzędzia."
+description: "Deno to nowoczesne środowisko uruchomieniowe dla JavaScript i TypeScript, stworzone przez twórcę Node.js."
 date: 2025-06-16
 tags: [ "javascript", "slowniczek-java-script" ]
 ---
