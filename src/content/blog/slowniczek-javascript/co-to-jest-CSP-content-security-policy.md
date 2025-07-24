@@ -1,5 +1,5 @@
 ---
-title: "Co to jest CSP - Content Security Policy"
+title: "Co to jest CSP - Content Security Policy w prostych słowach."
 description: "Jak Content Security Policy chroni aplikację przed atakami XSS."
 date: 2025-07-19
 tags: [ "javascript", "slowniczek-java-script" ]
@@ -14,10 +14,15 @@ CSP odpowiada serwer, na którym hostowana jest nasza strona.
 
 Zadaniem CSP jest wskazanie przeglądarce, z jakich zasobów korzysta strona internetowa i pozwolenie na ich załadowanie.
 Mogą być to odnośniki do zasobów umieszczonych na zewnętrznych serwerach jak obrazki, skrypty JavaScript czy arkusze
-stylów np. link do stylów Bootstrap. CSP blokuje także ładowanie wewnętrznych zasobów jak style inline, skrypty inline
+stylów np. link do stylów Bootstrap. CSP dotyczy także ładowania wewnętrznych zasobów jak style inline, skrypty inline
 czy eventy inline.
 
-Aby odpowiednio skonfigurować CSP w nagłówku `Content-Security-Policy` musimy przesłać odpowiednie dyrektywy.
+Jeżeli nasz serwer ma włączoną politykę CSP i przesyła nagłówek do przeglądarki, a my nie przekażemy odpowiednich
+wartości w nagłówku, przeglądarka będzie blokowała pobieranie zewnętrznych, a nawet wewnętrznych zasobów.
+
+Aby odpowiednio skonfigurować CSP w nagłówku `Content-Security-Policy` musimy przesłać odpowiednie dyrektywy. Na ich
+podstawie przeglądarka będzie podejmowała decyzje, jakie zasoby zewnętrzne i wewnętrzne mogą być załadowane wraz ze
+stroną.
 
 ## CSP w dalszych szczegółach
 
