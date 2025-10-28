@@ -1,6 +1,6 @@
 ---
 title: "Co to jest i jakie są różnice między plikami JS, JSX, TS, TSX"
-description: "Krótkie przedstawienie często pojawiających się rozszerzeń plików przy tworzeniu aplikacji webowych.Ermit"
+description: "Krótkie przedstawienie często pojawiających się rozszerzeń plików przy tworzeniu aplikacji webowych."
 date: 2025-10-06
 tags: [ "javascript", "slowniczek-java-script" ]
 ---
