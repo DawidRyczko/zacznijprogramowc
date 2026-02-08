@@ -61,7 +61,7 @@ Ponieważ dokumentacja WCAG jest trudna do przetworzenia i wygląda jak akt praw
 
 Przyjrzyjmy się kilku przykładom, jak wygląda złamanie zasda POUR i ich poprawne wersje:
 
-1. Postrzegalność (Perceivable) - Użytkownik musi móc "zobaczyć" treść:
+### **1. Postrzegalność (Perceivable) - Użytkownik musi móc "zobaczyć" treść:**
 
 **Typowy błąd**: Obrazek będący linkiem lub niosący informację nie ma tekstu alternatywnego. Czytnik ekranu powie wtedy
 tylko "obrazek" lub przeczyta nazwę pliku.
@@ -83,7 +83,7 @@ tylko "obrazek" lub przeczyta nazwę pliku.
 />
 ```
 
-2. Funkcjonalność (Operable) - Interfejs musi dać się obsługiwać:
+### **2. Funkcjonalność (Operable) - Interfejs musi dać się obsługiwać:**
 
 **Typowy błąd**: Robienie przycisków ze zwykłych div-ów. Wyglądają jak przyciski dzięki Tailwindowi, ale nie da się na
 nie "wejść" tabulatorem ani aktywować ich Enterem.
@@ -111,7 +111,7 @@ nie "wejść" tabulatorem ani aktywować ich Enterem.
 </button>
 ```
 
-3. Zrozumiałość (Understandable) - Treść i obsługa muszą być jasne:
+### **3. Zrozumiałość (Understandable) - Treść i obsługa muszą być jasne:**
 
 **Typowy błąd**: Brak zdefiniowania języka strony. Jeśli Twoja strona jest po polsku, a przeglądarka "myśli", że
 to angielski, syntezator mowy będzie czytał polskie słowa z angielskim akcentem, co brzmi jak bełkot.
@@ -139,7 +139,7 @@ to angielski, syntezator mowy będzie czytał polskie słowa z angielskim akcent
 </html>
 ```
 
-4. Solidność (Robust) - Kod musi być poprawny technicznie:
+### **4. Solidność (Robust) - Kod musi być poprawny technicznie:**
 
 **Typowy błąd**: Przycisk, który zawiera tylko ikonę (np. lupa w wyszukiwarce). Widzący widzi lupę, ale czytnik ekranu
 widzi pusty przycisk, bo SVG jest dla niego "przezroczyste". Kod jest poprawny wizualnie, ale nie "solidny"
